@@ -8,3 +8,4 @@ A lite link manage on django
 ## server
 
 * https://www.django-rest-framework.org/
+* https://github.com/jazzband/django-taggit
