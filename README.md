@@ -3,7 +3,7 @@ A lite link manage on django
 
 ## client
 
-* 
+* https://weightless.dev/
 
 ## server
 

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@a11y/focus-trap@~1.0.4":
+  version "1.0.5"
+  resolved "https://registry.npm.taobao.org/@a11y/focus-trap/download/@a11y/focus-trap-1.0.5.tgz#0748189c37ca21255c702aa5de3ee00ed4821d22"
+  integrity sha1-B0gYnDfKISVccCql3j7gDtSCHSI=
+
 "@babel/code-frame@^7.0.0", "@babel/code-frame@^7.8.3":
   version "7.8.3"
   resolved "https://registry.npm.taobao.org/@babel/code-frame/download/@babel/code-frame-7.8.3.tgz?cache=0&sync_timestamp=1578953126105&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fcode-frame%2Fdownload%2F%40babel%2Fcode-frame-7.8.3.tgz#33e25903d7481181534e12ec0a25f16b6fcf419e"
@@ -5174,6 +5179,18 @@ listr@^0.14.3:
     p-map "^2.0.0"
     rxjs "^6.3.3"
 
+lit-element@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.npm.taobao.org/lit-element/download/lit-element-2.2.1.tgz#79c94d8cfdc2d73b245656e37991bd1e4811d96f"
+  integrity sha1-eclNjP3C1zskVlbjeZG9HkgR2W8=
+  dependencies:
+    lit-html "^1.0.0"
+
+lit-html@^1.0.0, lit-html@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.npm.taobao.org/lit-html/download/lit-html-1.1.2.tgz#2e3560a7075210243649c888ad738eaf0daa8374"
+  integrity sha1-LjVgpwdSECQ2SciIrXOOrw2qg3Q=
+
 load-json-file@^2.0.0:
   version "2.0.0"
   resolved "https://registry.npm.taobao.org/load-json-file/download/load-json-file-2.0.0.tgz#7947e42149af80d696cbf797bcaabcfe1fe29ca8"
@@ -8699,6 +8716,15 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.npm.taobao.org/websocket-extensions/download/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
   integrity sha1-XS/yKXcAPsaHpLhwc9+7rBRszyk=
+
+weightless@^0.0.37:
+  version "0.0.37"
+  resolved "https://registry.npm.taobao.org/weightless/download/weightless-0.0.37.tgz#155b020c27ec1d210055f09c31682f32ae785c09"
+  integrity sha1-FVsCDCfsHSEAVfCcMWgvMq54XAk=
+  dependencies:
+    "@a11y/focus-trap" "~1.0.4"
+    lit-element "^2.2.1"
+    lit-html "^1.1.2"
 
 when@~3.6.x:
   version "3.6.4"
