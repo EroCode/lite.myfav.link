@@ -3,12 +3,7 @@ module.exports = {
   env: {
     node: true,
   },
-  extends: [
-    'plugin:vue/essential',
-    '@vue/airbnb',
-    'prettier',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['plugin:vue/essential', 'prettier', 'plugin:prettier/recommended'],
   parserOptions: {
     parser: 'babel-eslint',
   },
@@ -16,7 +11,7 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'prettier/prettier': 'error',
+    'prettier/prettier': 'off',
     'no-unused-vars': 'warn',
     'func-names': 'off',
     'no-process-exit': 'off',
