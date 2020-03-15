@@ -3,4 +3,3 @@ django-filter==2.2.0
 django-taggit==1.2.0
 djangorestframework==3.11.0
 Markdown==3.2.1
-pylint==2.4.4
