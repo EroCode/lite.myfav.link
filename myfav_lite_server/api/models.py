@@ -16,10 +16,6 @@ class CategoryEntry(models.Model):
     name = models.CharField(max_length=255, blank=False)
     links = models.ManyToManyField('LinkEntry', blank=True)
 
-class TagEntry(TaggedItemBase):
-    #name = models.CharField(max_length=25, blank=False)
-    content_object = models.CharField(max_length=25, blank=False)
-
 class LinkEntry(models.Model):
     category_name = models.ForeignKey(
         CategoryEntry, 
@@ -39,5 +35,4 @@ class LinkEntry(models.Model):
         blank=True
     )
     public_date = models.DateTimeField('date published')
-    #tags = models.ManyToManyField('TagEntry')
-    tags = TaggableManager(through=TagEntry, blank=True)
+    tags = TaggableManager(blank=True)

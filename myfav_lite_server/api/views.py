@@ -1,8 +1,8 @@
 from django.contrib.auth.models import User
 from rest_framework import viewsets
-from api.serializers import UserSerializer, LinkEntrySerializer, CategorySerializer, TagEntrySerializer
+from api.serializers import UserSerializer, LinkEntrySerializer, CategorySerializer
 
-from api.models import LinkEntry, CategoryEntry, TagEntry
+from api.models import LinkEntry, CategoryEntry
 
 # Create your views here.
 
@@ -17,7 +17,3 @@ class LinkEntryViewSet(viewsets.ModelViewSet):
 class CategoryEntryViewSet(viewsets.ModelViewSet):
     queryset = CategoryEntry.objects.all()
     serializer_class = CategorySerializer
-
-class TagEntryViewSet(viewsets.ModelViewSet):
-    queryset = TagEntry.objects.all()
-    serializer_class = TagEntrySerializer

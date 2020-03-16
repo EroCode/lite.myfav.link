@@ -1,7 +1,8 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
+from taggit_serializer.serializers import TagListSerializerField, TaggitSerializer
 
-from api.models import CategoryEntry, LinkEntry, TagEntry
+from api.models import CategoryEntry, LinkEntry
 
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
@@ -16,14 +17,8 @@ class CategorySerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'owner', 'name', 'links')
         
 
-class TagEntrySerializer(serializers.HyperlinkedModelSerializer):
-    class Meta:
-        model = TagEntry
-        fields = ('url', 'content_object')
-        
-class LinkEntrySerializer(serializers.HyperlinkedModelSerializer):
-    #tags = serializers.StringRelatedField(many=True, read_only=True)
-    tags = TagEntrySerializer(read_only=True, many=True)
+class LinkEntrySerializer(TaggitSerializer, serializers.ModelSerializer):
+    tags = TagListSerializerField()
 
     class Meta:
         model = LinkEntry
